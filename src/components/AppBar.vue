@@ -1,55 +1,87 @@
 <template>
-  <v-card class="overflow-hidden">
+  <v-card
+    class="mx-auto overflow-hidden bar"
+    width="100%"
+    height="100%"
+  >
+
     <v-app-bar
-      absolute
-      app color="transparent"
-      
+      class="bar"
+      dark
+      prominent
+      height="62px"
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-spacer></v-spacer>
 
-      <v-menu
-        left
-        bottom
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn
-            icon
-            v-bind="attrs"
-            v-on="on"
-          >
-            <v-icon>mdi-dots-vertical</v-icon>
-          </v-btn>
-        </template>
-
-        <v-list>
-          <v-list-item
-            v-for="n in 5"
-            :key="n"
-            @click="() => {}"
-          >
-            <v-list-item-title>Option {{ n }}</v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-menu>
-      
+      <v-btn icon>
+        <v-icon>mdi-dots-vertical</v-icon>
+      </v-btn>
     </v-app-bar>
-    <v-sheet
-      
+
+    <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      bottom
+      temporary
     >
-      <v-container style="height: 62px; margin: auto;">
-      </v-container>
-    </v-sheet>
+      <v-list
+        nav
+        dense
+      >
+        <v-list-item-group
+          v-model="group"
+          active-class="deep-purple--text text--accent-4"
+        >        
+          <v-list-item>
+            <v-list-item-title><router-link to="/" class="nav-link">Home</router-link></v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title><router-link to="/resume" class="nav-link">Resume</router-link></v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <router-link to="/projects" class="nav-link"><v-list-item-title>Projects</v-list-item-title></router-link>
+          </v-list-item>
+
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+
+    <router-view />
+    <Footer />
   </v-card>
 </template>
 
 <script>
+import Footer from './Footer.vue'
 export default {
-    name: 'AppBar'
+    name: 'AppBar',
+    components: {
+      Footer
+    },
+    data: () => ({
+      drawer: false,
+      group: null,
+    }),
+
+    watch: {
+      group () {
+        this.drawer = false
+      },
+    },
 }
 </script>
 
 <style scoped>
-    
+    .nav-link {
+      text-decoration: none;
+      text-align: center;
+    }
+    .bar {
+      background: rgb(2,0,36);
+      background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(50,109,190,1) 48%, rgba(0,212,255,1) 100%);
+    }
 </style>
