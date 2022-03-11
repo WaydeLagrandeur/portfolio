@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomePage from '../pages/Home'
 import Resume from '../pages/Resume'
-import Projects from '../pages/Projects'
+import Projects from '../pages/ProjectPage'
 
 Vue.use(VueRouter)
 
