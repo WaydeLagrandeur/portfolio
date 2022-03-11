@@ -22,7 +22,7 @@ export default {
 <style scoped>
     .project {
         text-align: center;
-        margin: 40vh auto;
+        margin: 24vh auto;
     }
     .project-name {
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
