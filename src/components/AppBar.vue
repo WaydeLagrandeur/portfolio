@@ -23,7 +23,7 @@
     <v-navigation-drawer
       v-model="drawer"
       absolute
-      bottom
+      top
       temporary
     >
       <v-list
