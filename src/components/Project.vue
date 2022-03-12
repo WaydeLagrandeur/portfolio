@@ -1,7 +1,7 @@
 <template>
     <div class="project">
             <h1 class="project-name">{{projectName}}</h1>
-            <img class="project-img" :src="image" />
+            <v-img class="project-img" :src="projectImg" />
             <p>{{projectDesc}}</p>
     </div>
 </template>
@@ -16,7 +16,7 @@ export default {
     },
     data () {
         return {
-            image: require('../assets/CSB.png')
+            
         }
     }
 }

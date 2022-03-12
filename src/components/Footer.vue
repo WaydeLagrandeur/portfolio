@@ -21,14 +21,14 @@
         </v-btn>
       </v-card-text>
 
-      <v-card-text class="white--text pt-0">
-        Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      <v-card-text class="white--text pt-0 footer">
+        wayde@lagrandeur.ca
       </v-card-text>
 
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+        {{ new Date().getFullYear() }}
       </v-card-text>
     </v-card>
   </v-footer>
@@ -38,8 +38,8 @@
   export default {
     data: () => ({
       icons: [
-        'mdi-facebook',
-        'mdi-twitter',
+        'mdi-github',
+        'mdi-discord',
         'mdi-linkedin',
         'mdi-instagram',
       ],
@@ -51,5 +51,6 @@
     .footer {
       background: rgb(2,0,36);
       background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(50,109,190,1) 48%, rgba(0,212,255,1) 100%);
+      width: 100%;
     }
 </style>

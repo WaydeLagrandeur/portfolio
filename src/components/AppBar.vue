@@ -10,6 +10,7 @@
       dark
       prominent
       height="62px"
+      fixed
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
@@ -22,7 +23,7 @@
 
     <v-navigation-drawer
       v-model="drawer"
-      absolute
+      fixed
       top
       temporary
     >
@@ -35,11 +36,11 @@
           active-class="deep-purple--text text--accent-4"
         >        
           <v-list-item>
-            <v-list-item-title><router-link to="/" class="nav-link">Home</router-link></v-list-item-title>
+            <router-link to="/" class="nav-link"><v-list-item-title>Home</v-list-item-title></router-link>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-title><router-link to="/resume" class="nav-link">Resume</router-link></v-list-item-title>
+            <router-link to="/resume" class="nav-link"><v-list-item-title>Resume</v-list-item-title></router-link>
           </v-list-item>
 
           <v-list-item>
@@ -78,7 +79,8 @@ export default {
 <style scoped>
     .nav-link {
       text-decoration: none;
-      text-align: center;
+      margin: auto;
+      font-size: 18px;
     }
     .bar {
       background: rgb(2,0,36);
