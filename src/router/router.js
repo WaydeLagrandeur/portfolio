@@ -25,8 +25,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
-    mode: 'history',
-    base: 'localhost:8000',
+    // mode: 'history',
+    // base: 'localhost:8080',
     routes
 })
 

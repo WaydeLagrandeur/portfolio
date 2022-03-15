@@ -14,8 +14,13 @@
           :key="icon"
           class="mx-4 white--text"
           icon
+          :href="links"
+          target="_blank"
         >
-          <v-icon size="24px">
+          <v-icon 
+          size="24px"
+          large
+          >
             {{ icon }}
           </v-icon>
         </v-btn>
@@ -35,6 +40,7 @@
 </template>
 
 <script>
+//import router from '../router/router'
   export default {
     data: () => ({
       icons: [
@@ -43,7 +49,19 @@
         'mdi-linkedin',
         'mdi-instagram',
       ],
+      links: [
+        'https://github.com/WaydeLagrandeur',
+        'https://www.discordapp.com/users/148168038687047680',
+        'https://www.linkedin.com/in/wayde-l/',
+        'https://www.instagram.com/thekoolwaydeman/'
+      ]
     }),
+
+    // methods: {
+    //   pushSite() {
+    //     router.push('www.wikipedia.org');
+    //   }
+    // }
   }
 </script>
 
@@ -52,5 +70,6 @@
       background: rgb(2,0,36);
       background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(50,109,190,1) 48%, rgba(0,212,255,1) 100%);
       width: 100%;
+      padding-top: 2vh;
     }
 </style>
