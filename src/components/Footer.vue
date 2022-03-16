@@ -9,7 +9,7 @@
       class="white--text text-center footer"
     >
       <v-card-text>
-        <v-btn
+        <!-- <v-btn
           v-for="icon in icons"
           :key="icon"
           class="mx-4 white--text"
@@ -23,7 +23,11 @@
           >
             {{ icon }}
           </v-icon>
-        </v-btn>
+        </v-btn> -->
+        <v-btn class="mx-4 white--text" icon href="https://github.com/WaydeLagrandeur"><v-icon size="24px" large>mdi-github</v-icon></v-btn>
+        <v-btn class="mx-4 white--text" icon href="https://www.discordapp.com/users/148168038687047680"><v-icon size="24px" large>mdi-discord</v-icon></v-btn>
+        <v-btn class="mx-4 white--text" icon href="https://www.linkedin.com/in/wayde-l/"><v-icon size="24px" large>mdi-linkedin</v-icon></v-btn>
+        <v-btn class="mx-4 white--text" icon href="https://www.instagram.com/thekoolwaydeman/"><v-icon size="24px" large>mdi-instagram</v-icon></v-btn>
       </v-card-text>
 
       <v-card-text class="white--text pt-0 footer">
