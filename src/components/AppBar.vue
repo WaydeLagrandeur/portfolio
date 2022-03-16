@@ -35,17 +35,19 @@
           v-model="group"
           active-class="deep-purple--text text--accent-4"
         >        
-          <v-list-item>
-            <router-link to="/" class="nav-link"><v-list-item-title>Home</v-list-item-title></router-link>
-          </v-list-item>
+          
+            <router-link to="/" class="nav-link"><v-list-item><v-list-item-title>Home</v-list-item-title></v-list-item></router-link>
+            <router-link to="/resume" class="nav-link"><v-list-item><v-list-item-title>Resume</v-list-item-title></v-list-item></router-link>
+            <router-link to="/projects" class="nav-link"><v-list-item><v-list-item-title>Projects</v-list-item-title></v-list-item></router-link>
+          
 
-          <v-list-item>
+          <!-- <v-list-item>
             <router-link to="/resume" class="nav-link"><v-list-item-title>Resume</v-list-item-title></router-link>
           </v-list-item>
 
           <v-list-item>
             <router-link to="/projects" class="nav-link"><v-list-item-title>Projects</v-list-item-title></router-link>
-          </v-list-item>
+          </v-list-item> -->
 
         </v-list-item-group>
       </v-list>
@@ -81,6 +83,7 @@ export default {
       text-decoration: none;
       margin: auto;
       font-size: 18px;
+      text-align: center;
     }
     .bar {
       background: rgb(2,0,36);
