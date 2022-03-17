@@ -6,13 +6,14 @@
         show-arrows-on-hover
     >
         <v-carousel-item
-        v-for="(slide, i) in slides"
+        v-for="i in 5"
         :key="i"
     >
       <v-sheet
         :color="colors[i]"
         height="100%"
       >
+      <img :src="imageURL[i]" />
         <v-row
           class="fill-height"
           align="center"
@@ -30,6 +31,7 @@
 
 <script>
   export default {
+    name: 'Carousel',
     data () {
       return {
         colors: [
@@ -46,8 +48,20 @@
           'Fourth',
           'Fifth',
         ],
+        imageURL: [
+          '../assets/SpamBot.png',
+          '../assets/CSB.png',
+          '../assets/AboutPage.png',
+          '../assets/dtech.png',
+          '../assets/bship.png'
+        ]
       }
     },
+    // props: {
+    //   title: String,
+    //   imagePath: String,
+    //   subtitle: String,
+    // }
   }
 </script>
 

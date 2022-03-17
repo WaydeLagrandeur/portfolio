@@ -16,9 +16,9 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn icon>
+      <!-- <v-btn icon>
         <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
+      </v-btn> -->
     </v-app-bar>
 
     <v-navigation-drawer
@@ -26,6 +26,7 @@
       fixed
       top
       temporary
+      class="nav-drawer"
     >
       <v-list
         nav
@@ -82,11 +83,14 @@ export default {
     .nav-link {
       text-decoration: none;
       margin: auto;
-      font-size: 18px;
       text-align: center;
     }
     .bar {
       background: rgb(2,0,36);
       background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(50,109,190,1) 48%, rgba(0,212,255,1) 100%);
+    }
+    .nav-drawer {
+      background: rgb(2,0,36);
+      background: linear-gradient(315deg, rgba(12,10,46,1) 0%, rgba(50,109,190,1) 48%, rgba(0,212,255,1) 100%);
     }
 </style>

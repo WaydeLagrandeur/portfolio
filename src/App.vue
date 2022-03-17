@@ -16,8 +16,8 @@ export default {
 
 <style scoped>
   #app {
-    background: rgb(2,0,36);
-    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(50,109,190,1) 48%, rgba(0,212,255,1) 100%);
+    background: rgb(82,80,126);
+    background: linear-gradient(270deg, rgba(82,80,126,1) 0%, rgba(50,109,190,1) 48%, rgba(0,212,255,1) 100%);
     margin: 0px; 
   }
 </style>

@@ -18,15 +18,16 @@ export default {
 <style scoped>
     .home-page {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     .home-img {
         max-height: 75vh;
-        margin: 15vh 5vw 0 15vw;
+        max-width: 40vh;
+        margin: 15vh auto 0 auto;
         box-shadow: 5px 10px rgba(0,0,0,0.5);
     }
     .home-text {
-        margin: 40vh 20vw 0 8vw; 
+        margin: 5vh 25vw 0 25vw; 
         text-align: center;
     }
 </style>
