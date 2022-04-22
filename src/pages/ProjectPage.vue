@@ -33,7 +33,7 @@
         <div class="project">
                 <h1 class="project-name">DuesyTech.com</h1>
                 <img class="project-img" src="../assets/dtech.png" />
-                <p>A tech support service where users can hire freelance technicians</p>
+                <p>Our capstone business project for school</p>
         </div>
         <div class="project">
                 <h1 class="project-name">Command Line Battleship</h1>

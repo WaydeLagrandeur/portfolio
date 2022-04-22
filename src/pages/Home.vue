@@ -3,7 +3,7 @@
         <img class="home-img" src="../assets/WaydeTaylor.jpg" />
         <div class="home-text">
             <h1>Wayde Lagrandeur</h1>
-            <p>Front-End Jr. Developer based out of Regina, Saskatchewan, Wayde is a Computer Systems Technology student at Saskatchewan Polytechnic. Wayde will be graduating in June 2022. When he's 
+            <p>Front-End Developer based out of Regina, Saskatchewan, Wayde is a Computer Systems Technology student at Saskatchewan Polytechnic. Wayde will be graduating in June 2022. When he's 
                 not making websites or bots, Wayde likes to play board games, DnD, piano, and golf.</p>
         </div>
     </div>
